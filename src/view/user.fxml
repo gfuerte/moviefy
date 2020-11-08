@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UserController">
+   <children>
+      <ComboBox fx:id="combo" layoutX="936.0" layoutY="17.0" onAction="#combo" prefWidth="150.0" />
+      <Hyperlink fx:id="home" layoutX="60.0" layoutY="15.0" onAction="#home" prefHeight="28.0" prefWidth="54.0" style="-fx-text-fill: black;" text="Home">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="browse" layoutX="60.0" layoutY="55.0" onAction="#browse" style="-fx-text-fill: BLACK;" text="Browse">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Hyperlink>
+      <ImageView fx:id="homeIcon" fitHeight="21.0" fitWidth="21.0" layoutX="28.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="browseIcon" fitHeight="20.0" fitWidth="22.0" layoutX="27.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="24.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="General Libraries" wrappingWidth="109.361328125">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Text>
+      <Hyperlink fx:id="watching" layoutX="18.0" layoutY="135.0" onAction="#watching" prefHeight="28.0" prefWidth="149.0" style="-fx-text-fill: black;" text="Currently Watching">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="completed" layoutX="18.0" layoutY="175.0" onAction="#completed" prefHeight="28.0" prefWidth="149.0" style="-fx-text-fill: black;" text="Completed">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="favorites" layoutX="18.0" layoutY="215.0" onAction="#favorites" prefHeight="28.0" prefWidth="149.0" style="-fx-text-fill: black;" text="Favorites">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="hold" layoutX="18.0" layoutY="255.0" onAction="#hold" prefHeight="28.0" prefWidth="149.0" style="-fx-text-fill: black;" text="On Hold">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="dropped" layoutX="18.0" layoutY="295.0" onAction="#dropped" prefHeight="28.0" prefWidth="149.0" style="-fx-text-fill: black;" text="Dropped">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="plan" layoutX="18.0" layoutY="335.0" onAction="#plan" prefHeight="28.0" prefWidth="149.0" style="-fx-text-fill: black;" text="Plan To Watch">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Hyperlink>
+      <ListView fx:id="customList" layoutX="13.0" layoutY="410.0" prefHeight="200.0" prefWidth="187.0" />
+      <Text layoutX="24.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Custom Libraries" wrappingWidth="109.361328125">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Text>
+      <Hyperlink fx:id="add" layoutX="10.0" layoutY="610.0" onAction="#add" prefHeight="28.0" prefWidth="109.0" style="-fx-text-fill: black;" text="Add Library" visited="true" />
+      <Hyperlink fx:id="edit" layoutX="105.0" layoutY="610.0" onAction="#edit" prefHeight="28.0" prefWidth="109.0" style="-fx-text-fill: black;" text="Edit Library" visited="true" />
+      <Pane fx:id="main" layoutX="200.0" layoutY="55.0" prefHeight="523.0" prefWidth="900.0" />
+   </children>
+</Pane>
