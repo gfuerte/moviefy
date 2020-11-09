@@ -86,6 +86,9 @@ public class UserController {
 	private void watching(ActionEvent event) throws IOException {
 		System.out.println("currently");
 		watching.setVisited(false);
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/list.fxml"));
+	    Pane list = loader.load();
+	    main.getChildren().add(list);
 	}
 	
 	@FXML
